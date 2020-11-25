@@ -1,0 +1,37 @@
+.contacts {
+  display: flex;
+  &-link {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $text-p;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-email-margin {
+    margin-right: 50px;
+  }
+  &-link:hover {
+    color: $text-blue;
+  }
+  &-link:hover .contacts-phone-svg {
+    fill: $text-blue;
+  }
+  &-link:hover .contacts-email-svg {
+    fill: $text-blue;
+  }
+  &-email-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
