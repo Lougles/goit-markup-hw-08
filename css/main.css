@@ -38,6 +38,20 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 .logo-blue {
   font-family: "Raleway";
   font-style: normal;
@@ -71,11 +85,22 @@ img {
 
 .page-header {
   position: relative;
-  z-index: 100;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-header {
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation-list {
-  margin-left: 83px;
   display: flex;
 }
 
@@ -85,9 +110,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation-list {
+    margin-left: 88px;
+  }
+}
+
 .navigation-item {
-  padding-top: 22px;
-  padding-bottom: 22px;
   position: relative;
 }
 
@@ -99,11 +128,12 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   display: block;
-  padding: 10px;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation-link:hover::after, .navigation-link:focus:after {
@@ -122,8 +152,8 @@ img {
   background: #2196f3;
   border-radius: 2px;
   position: absolute;
+  top: 45px;
   left: 0;
-  bottom: 0;
   transform: scaleX(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -175,8 +205,8 @@ img {
   height: 2px;
   background: #2196f3;
   border-radius: 2px;
+  top: 45px;
   left: 0;
-  bottom: 0;
   transform: scaleX(1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -269,13 +299,15 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts {
-  display: flex;
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
   }
 }
 
@@ -306,18 +338,36 @@ img {
   fill: #2196f3;
 }
 
-.contacts-email-svg {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-email-svg {
+    width: 14px;
+    height: 10px;
+  }
 }
 
-.contacts-phone-svg {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .contacts-email-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-phone-svg {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .mobile-contacts {
@@ -480,7 +530,7 @@ img {
   padding-top: 94px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .our-occupation {
     display: none;
   }
@@ -1133,6 +1183,20 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 .logo-blue {
   font-family: "Raleway";
   font-style: normal;
@@ -1166,11 +1230,22 @@ img {
 
 .page-header {
   position: relative;
-  z-index: 100;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-header {
+    z-index: 100;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation-list {
-  margin-left: 83px;
   display: flex;
 }
 
@@ -1180,9 +1255,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation-list {
+    margin-left: 88px;
+  }
+}
+
 .navigation-item {
-  padding-top: 22px;
-  padding-bottom: 22px;
   position: relative;
 }
 
@@ -1194,11 +1273,12 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   display: block;
-  padding: 10px;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation-link:hover::after, .navigation-link:focus:after {
@@ -1217,8 +1297,8 @@ img {
   background: #2196f3;
   border-radius: 2px;
   position: absolute;
+  top: 45px;
   left: 0;
-  bottom: 0;
   transform: scaleX(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1270,8 +1350,8 @@ img {
   height: 2px;
   background: #2196f3;
   border-radius: 2px;
+  top: 45px;
   left: 0;
-  bottom: 0;
   transform: scaleX(1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1364,13 +1444,15 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts {
-  display: flex;
-}
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contacts {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
   }
 }
 
@@ -1401,18 +1483,36 @@ img {
   fill: #2196f3;
 }
 
-.contacts-email-svg {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-email-svg {
+    width: 14px;
+    height: 10px;
+  }
 }
 
-.contacts-phone-svg {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .contacts-email-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-phone-svg {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .mobile-contacts {
