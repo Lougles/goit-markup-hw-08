@@ -26,10 +26,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  @media screen and(min-width: $tablet) {
-    width: 768px;
-  }
-  @media screen and(min-width: $desktop) {
-    width: 1200px;
+  @media screen and(min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    max-width: 480px;
   }
 }

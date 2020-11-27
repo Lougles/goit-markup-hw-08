@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <header class="portfolio-header">
+    <header class="page-header">
       <div class="container page-container">
         <nav class="navigation">
           <a href="./index.html" class="logo-link">
@@ -29,12 +29,12 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="./index.html" class="navigation-link">Студия</a>
+              <a href="./index.html" class="navigation-link action-window"
+                >Студия</a
+              >
             </li>
             <li class="navigation-item">
-              <a href="./portfolio.html" class="navigation-link action-window"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="navigation-link">Портфолио</a>
             </li>
             <li class="navigation-item">
               <a href="#adress" class="navigation-link">Контакты</a>
@@ -62,6 +62,65 @@
             >
           </li>
         </ul>
+        <button
+          data-menu-button
+          type="button"
+          class="navigation__mobile-btn is-open"
+        >
+          <svg width="24" height="16">
+            <use
+              class="icon-close"
+              href="./images/icons/mi.svg#icon-close_24px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icons/mi.svg#icon-menu_mobile"
+              aria-label="переключатель мобильного меню"
+            ></use>
+          </svg>
+        </button>
+        <div data-menu class="mobile-menu-container">
+          <ul class="mobile-menu-container-list is-open">
+            <li class="mobile-menu-container-item">
+              <a href="./index.html" class="mobile-menu-container-link"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-container-item">
+              <a
+                href="./portfolio.html"
+                class="mobile-menu-container-link mobile-menu-container-link-action"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-container-item">
+              <a href="" class="mobile-menu-container-link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts is-open">
+            <li class="mobile-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-link">
+                <svg class="mobile-contacts-link-svg" width="16" height="12">
+                  <use href="./images/icons/mi.svg#icon-message"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a href="tel:+380961112222" class="mobile-contacts-link">
+                <svg
+                  class="mobile-contacts-link-svg"
+                  width="10"
+                  height="15"
+                  class=""
+                >
+                  <use href="./images/icons/mi.svg#icon-iphone"></use>
+                </svg>
+                +38(096) 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -91,9 +150,8 @@
                 <div class="card-thumb">
                   <img
                     src="./images/portfolio/1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
+                    alt=""
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -115,8 +173,7 @@
                   <img
                     src="./images/portfolio/2.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -136,8 +193,7 @@
                   <img
                     src="./images/portfolio/3.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -157,8 +213,7 @@
                   <img
                     src="./images/portfolio/4.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -178,8 +233,7 @@
                   <img
                     src="./images/portfolio/5.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -201,8 +255,7 @@
                   <img
                     src="./images/portfolio/6.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -222,8 +275,7 @@
                   <img
                     src="./images/portfolio/7.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -243,8 +295,7 @@
                   <img
                     src="./images/portfolio/8.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -264,8 +315,7 @@
                   <img
                     src="./images/portfolio/9.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="portofolio-hidden-text">
                     Технокряк это современная площадка распространения
@@ -342,5 +392,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

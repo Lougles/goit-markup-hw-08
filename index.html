@@ -63,7 +63,7 @@
         <button
           data-menu-button
           type="button"
-          class="navigation__mobile-menu is-open"
+          class="navigation__mobile-btn is-open"
         >
           <svg width="24" height="16">
             <use
@@ -77,7 +77,48 @@
             ></use>
           </svg>
         </button>
-        <div data-menu class="mobile-menu-container">Контент меню</div>
+        <div data-menu class="mobile-menu-container">
+          <ul class="mobile-menu-container-list is-open">
+            <li class="mobile-menu-container-item">
+              <a
+                href="#"
+                class="mobile-menu-container-link mobile-menu-container-link-action"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-container-item">
+              <a href="./portfolio.html" class="mobile-menu-container-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-container-item">
+              <a href="" class="mobile-menu-container-link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts is-open">
+            <li class="mobile-contacts-item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-link">
+                <svg class="mobile-contacts-link-svg" width="16" height="12">
+                  <use href="./images/icons/mi.svg#icon-message"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a href="tel:+380961112222" class="mobile-contacts-link">
+                <svg
+                  class="mobile-contacts-link-svg"
+                  width="10"
+                  height="15"
+                  class=""
+                >
+                  <use href="./images/icons/mi.svg#icon-iphone"></use>
+                </svg>
+                +38(096) 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -368,72 +409,60 @@
         <div class="container">
           <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list">
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-yaco">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-1"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-tagline">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-company">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-3"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-foster">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-4"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-brand">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-5"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
-            <div class="customers-item-container">
-              <li class="customers-item">
-                <a href="" class="customers-link">
-                  <svg class="customers-companytagline">
-                    <use
-                      href="./images/icons/symbol-customers.svg#icon-customers-6"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </div>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-yaco">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-tagline">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-company">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-3"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-foster">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-4"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-brand">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-5"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg class="customers-companytagline">
+                  <use
+                    href="./images/icons/symbol-customers.svg#icon-customers-6"
+                  ></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
