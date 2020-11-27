@@ -1,8 +1,10 @@
 .qualities {
-  padding-top: 94px;
+  // padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &-list {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
   &-title {
     font-family: $roboto;
@@ -14,6 +16,9 @@
     text-transform: uppercase;
     color: $text-header;
     margin-bottom: 10px;
+    @media screen and (min-width: $mobile) {
+      text-align: center;
+    }
   }
   & p {
     font-family: $roboto;
@@ -26,7 +31,9 @@
   }
 }
 .qualities-item {
-  width: 270px;
+  // width: 270px;
+  width: 450px;
+  // для моб подходят
   &::before {
     display: block;
     content: "";
@@ -38,7 +45,10 @@
     border-radius: 4px;
   }
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
 }
 

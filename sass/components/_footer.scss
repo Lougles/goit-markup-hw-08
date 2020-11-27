@@ -4,9 +4,23 @@
   padding-top: 60px;
   &-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
   }
-  //ссылка
+  &-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  //ссылка (всё подходит)
   &-link {
     font-family: $roboto;
     font-style: normal;
@@ -18,9 +32,10 @@
   }
   //отступ вниз кроме последнего элемента
   &-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    // margin-bottom: 9px;
   }
-  //Адрес
+  //Адрес (подходит всё)
   &-adress {
     font-family: $roboto;
     font-style: normal;
@@ -30,15 +45,12 @@
     letter-spacing: 0.03em;
     color: $text-white;
   }
-  //логотип
-  &-logo-container {
-    margin-bottom: 20px;
-  }
 }
 //Социальные сети
 .footer-social {
-  padding-left: 70px;
-  padding-top: 12px;
+  margin-top: 60px;
+  // padding-left: 70px;
+  // padding-top: 12px;
   //Оглавление соц.сетей
   &-title {
     font-family: $roboto;
@@ -49,11 +61,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
   //Список
   &-list {
     display: flex;
-    margin-top: 20px;
+    // margin-top: 20px;
   }
   //Элемент списка
   &-item {
@@ -90,11 +106,12 @@
 }
 
 .footer-mail {
-  padding-left: 93px;
-  padding-top: 12px;
+  margin-top: 60px;
+  // padding-left: 93px;
+  // padding-top: 12px;
   &-container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
   &-input {
     font-family: $roboto;
@@ -111,10 +128,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin-top: 20px;
-    width: 358px;
+    width: 450px;
+    // width: 358px;
     height: 50px;
     padding: 16px 15px;
-    margin-right: 12px;
+    // margin-right: 12px;
     background: #2f303a;
   }
   &-btn {
@@ -123,9 +141,10 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.875;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    //не уверен в стилях ниже закоменченных
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
     letter-spacing: 0.06em;
     width: 200px;
     color: $text-white;
@@ -133,7 +152,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 62px 10px 29px;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto 60px;
+    border: none;
     background-image: url("../images/plane.png");
     background-repeat: no-repeat;
     background-position: center right 28px;

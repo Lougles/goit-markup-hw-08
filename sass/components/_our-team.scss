@@ -1,9 +1,16 @@
 .our-team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
   background-color: $background-grey;
+  &-img {
+    max-width: 450px;
+    max-height: 460px;
+  }
   &-list {
     display: flex;
+    flex-direction: column;
   }
   &-item {
     background-color: $text-white;
@@ -12,19 +19,24 @@
     border-radius: 0px 0px 4px 4px;
   }
   &-item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
+    margin-bottom: 30px;
   }
   &-title {
     font-family: $roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.166;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
     letter-spacing: 0.03em;
     color: $text-header;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    // font-size: 36px;
+    // line-height: 1.166;
+    // margin-bottom: 50px;
   }
+  //подходит
   &-text {
     font-family: $roboto;
     font-style: normal;
@@ -37,6 +49,7 @@
     margin-bottom: 16px;
     margin-top: 10px;
   }
+  //подходит
   &-list-title {
     font-family: $roboto;
     font-style: normal;
@@ -49,14 +62,19 @@
   }
   &-description-container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
   }
 }
 
 .our-team-social {
+  // display: flex;
+  // justify-content: space-between;
+  // padding: 0 32px;
   display: flex;
-  justify-content: space-between;
-  padding: 0 32px;
+  justify-content: center;
+
   &-item {
     cursor: pointer;
   }

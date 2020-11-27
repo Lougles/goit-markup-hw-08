@@ -17,9 +17,19 @@ p {
   list-style: none;
   border: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  @media screen and(min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and(min-width: $desktop) {
+    width: 1200px;
+  }
 }

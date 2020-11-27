@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goit-hw-07</title>
+    <title>Goit-hw-08</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
@@ -60,6 +60,24 @@
             >
           </li>
         </ul>
+        <button
+          data-menu-button
+          type="button"
+          class="navigation__mobile-menu is-open"
+        >
+          <svg width="24" height="16">
+            <use
+              class="icon-close"
+              href="./images/icons/mi.svg#icon-close_24px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icons/mi.svg#icon-menu_mobile"
+              aria-label="переключатель мобильного меню"
+            ></use>
+          </svg>
+        </button>
+        <div data-menu class="mobile-menu-container">Контент меню</div>
       </div>
     </header>
     <main>
@@ -151,8 +169,7 @@
               <img
                 src="./images/team1.jpg"
                 alt="Фото Игорь Демьяненко"
-                width="270"
-                height="260"
+                class="our-team-img"
               />
               <div class="our-team-description-container">
                 <h3 class="our-team-list-title">Игорь Демьяненко</h3>
@@ -201,8 +218,7 @@
               <img
                 src="./images/team2.jpg"
                 alt="Фото Ольга Репина"
-                width="270"
-                height="260"
+                class="our-team-img"
               />
               <div class="our-team-description-container">
                 <h3 class="our-team-list-title">Ольга Репина</h3>
@@ -251,8 +267,7 @@
               <img
                 src="./images/team3.jpg"
                 alt="Фото Николай Тарасов"
-                width="270"
-                height="260"
+                class="our-team-img"
               />
               <div class="our-team-description-container">
                 <h3 class="our-team-list-title">Николай Тарасов</h3>
@@ -301,8 +316,7 @@
               <img
                 src="./images/team4.jpg"
                 alt="Фото Михаил Ермаков"
-                width="270"
-                height="260"
+                class="our-team-img"
               />
               <div class="our-team-description-container">
                 <h3 class="our-team-list-title">Михаил Ермаков</h3>
@@ -551,5 +565,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
