@@ -555,9 +555,15 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-social-title {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer-social-list {
@@ -623,7 +629,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-mail-container {
     display: flex;
-    align-items: center;
   }
 }
 

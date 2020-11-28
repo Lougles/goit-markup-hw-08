@@ -1,9 +1,18 @@
 .hero {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/background/hero_mobile.jpg");
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/hero_mobile.jpg");
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/hero_tablet.jpg");
+  }
   @media screen and(min-width: 320px) and (max-width: 1199px) {
     padding-bottom: 118px;
     padding-top: 118px;

@@ -87,8 +87,11 @@
     text-transform: uppercase;
     color: $text-white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      align-items: center;
+      flex-direction: column;
+    }
     margin-bottom: 20px;
   }
   //Список
@@ -146,7 +149,7 @@
   &-container {
     @media screen and (min-width: 1200px) {
       display: flex;
-      align-items: center;
+      // align-items: center;
     }
   }
   &-input {
