@@ -90,6 +90,9 @@
   .card-thumb {
     position: relative;
     overflow: hidden;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      z-index: 0;
+    }
     &::before {
       display: inline-block;
       content: "";

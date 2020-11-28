@@ -123,12 +123,6 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .page-header {
-    z-index: 100;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
@@ -1295,14 +1289,37 @@ img {
 
 .modal {
   position: absolute;
-  top: 93px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  min-width: 95%;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 208px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 221px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 526px;
+  }
 }
 
 .modal-title {
@@ -1357,7 +1374,6 @@ img {
   height: 120px;
   resize: none;
   padding: 12px 16px;
-  margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -1365,6 +1381,18 @@ img {
   line-height: 1.166;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .modal-area {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-area {
+    margin-bottom: 25px;
+  }
 }
 
 .modal-sbm-btn {
@@ -1416,6 +1444,12 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-checkbox {
+    margin-left: 12px;
+  }
+}
+
 .modal-checkbox-input:checked ~ .modal-checkbox-label::before {
   background-image: url("../images/choise.png");
 }
@@ -1433,7 +1467,7 @@ img {
   line-height: 1.166;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 18px;
+  margin-left: 25px;
 }
 
 .modal-checkbox-label::before {
@@ -1610,12 +1644,6 @@ img {
 
 .page-header {
   position: relative;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .page-header {
-    z-index: 100;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2290,6 +2318,12 @@ img {
 .portfolio .card-thumb {
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio .card-thumb {
+    z-index: 0;
+  }
 }
 
 .portfolio .card-thumb::before {
