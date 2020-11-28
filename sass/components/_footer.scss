@@ -3,11 +3,15 @@
   padding-bottom: 60px;
   padding-top: 60px;
   &-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // display: flex;
-    // justify-content: space-between;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &-logo-container {
     display: flex;
@@ -45,12 +49,33 @@
     letter-spacing: 0.03em;
     color: $text-white;
   }
+  &-tablet-container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &-contacts-container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 61px;
+    }
+  }
 }
 //Социальные сети
 .footer-social {
-  margin-top: 60px;
-  // padding-left: 70px;
-  // padding-top: 12px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 70px;
+    padding-top: 12px;
+  }
   //Оглавление соц.сетей
   &-title {
     font-family: $roboto;
@@ -106,13 +131,23 @@
 }
 
 .footer-mail {
-  margin-top: 60px;
-  width: 100%;
-  // padding-left: 93px;
-  // padding-top: 12px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 60px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 60px auto 0;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 93px;
+    padding-top: 12px;
+  }
   &-container {
-    // display: flex;
-    // align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
   }
   &-input {
     font-family: $roboto;
@@ -122,19 +157,23 @@
     line-height: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-top: 20px;
     width: 100%;
-    // width: 358px;
     height: 50px;
     padding: 16px 15px;
-    // margin-right: 12px;
     background: #2f303a;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &-btn {
     font-family: $roboto;
@@ -142,10 +181,9 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.875;
-    //не уверен в стилях ниже закоменченных
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
     letter-spacing: 0.06em;
     width: 200px;
     color: $text-white;
@@ -154,7 +192,9 @@
     border-radius: 4px;
     padding: 10px 62px 10px 29px;
     display: block;
-    margin: 20px auto 60px;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      margin: 20px auto 0;
+    }
     border: none;
     background-image: url("../images/plane.png");
     background-repeat: no-repeat;

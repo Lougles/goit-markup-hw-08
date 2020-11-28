@@ -1,16 +1,14 @@
 .hero {
-  padding-bottom: 118px;
-  padding-top: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/background/hero_mobile.jpg");
-  @media screen and(min-width: $tablet) {
-    padding-bottom: 200px;
-    padding-top: 200px;
+  @media screen and(min-width: 320px) and (max-width: 1199px) {
+    padding-bottom: 118px;
+    padding-top: 118px;
   }
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width: 1200px) {
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(
@@ -26,23 +24,23 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 1.615;
+    }
+    @media screen and (min-width: 450px) and (max-width: 1199px) {
+      width: 360px;
+    }
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $text-white;
     margin: 0 auto 30px;
-    // font-family: $roboto;
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.363;
-    // text-align: center;
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
-    // color: $text-white;
-    // width: 696px;
-    // margin: 0 auto 30px;
+    @media screen and (min-width: 1200px) {
+      line-height: 1.363;
+      font-size: 44px;
+      width: 696px;
+    }
   }
   &-btn {
     font-family: $roboto;
@@ -59,5 +57,11 @@
     margin: 0 auto;
     border: none;
     cursor: pointer;
+    @media screen and (min-width: 480) and (max-width: 1199px) {
+      width: 136px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+    }
   }
 }
