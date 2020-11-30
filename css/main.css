@@ -266,6 +266,10 @@ img {
   display: block;
 }
 
+.navigation__mobile-btn:hover {
+  fill: #2196f3;
+}
+
 .mobile-menu-container {
   display: none;
   position: absolute;
@@ -1818,6 +1822,10 @@ img {
 
 .navigation__mobile-btn.is-open .icon-menu {
   display: block;
+}
+
+.navigation__mobile-btn:hover {
+  fill: #2196f3;
 }
 
 .mobile-menu-container {

@@ -266,6 +266,10 @@ img {
   display: block;
 }
 
+.navigation__mobile-btn:hover {
+  fill: #2196f3;
+}
+
 .mobile-menu-container {
   display: none;
   position: absolute;

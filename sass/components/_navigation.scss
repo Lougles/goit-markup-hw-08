@@ -116,6 +116,9 @@
 .navigation__mobile-btn.is-open .icon-menu {
   display: block;
 }
+.navigation__mobile-btn:hover {
+  fill: $text-blue;
+}
 
 .mobile-menu-container {
   display: none;
